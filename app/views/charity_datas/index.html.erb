@@ -1,0 +1,22 @@
+<h1>Charity Data</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Charity Name</th>
+      <th>Charity Logo</th>
+      <th>Charity Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @charity_data.each do |charity_data| %>
+      <tr>
+        <td><%= charity_data.charity_name %></td>
+        <td><img src="<%= charity_data.charity_logo %>"/></td>
+        <td><%= charity_data.charity_desc %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
