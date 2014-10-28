@@ -4,8 +4,7 @@
 </p>
 
 <p>
-  <strong>Charity logo:</strong>
-  <%= @charity_data.charity_logo %>
+  <img src="<%= @charity_data.charity_logo %>"/>
 </p>
 
 <p>
@@ -13,4 +12,4 @@
   <%= @charity_data.charity_desc %>
 </p>
 
-<%= link_to 'Back', charity_data_path %>
+<%= link_to 'Back', root_path %>

@@ -13,7 +13,7 @@
   <tbody>
     <% @charity_data.each do |charity_data| %>
       <tr>
-        <td><%= charity_data.charity_name %></td>
+        <td><%= link_to charity_data.charity_name, charity_data_path(charity_data) %></td>
         <td><img src="<%= charity_data.charity_logo %>"/></td>
         <td><%= charity_data.charity_desc %></td>
       </tr>
