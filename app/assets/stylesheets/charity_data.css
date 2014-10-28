@@ -1,19 +1,33 @@
-
-/*-- credit to Better Helvetica snippet from CSS-Tricks: http://css-tricks.com/snippets/css/better-helvetica/ --*/;
-body {
-   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-   font-weight: 300;
-   width: 100%;
+* {
+	margin: 0;
 }
 
-img {
-	height: 150px;
-	width: 150px;
+html, body {
+	height: 100%;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-weight: 300;
+	width: 100%;
 }
 
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -4em;
+}
 
+.footer, .push {
+	height: 4em;
+}
 
+.footer p {
+	text-align: center;
+}
 
+.col-2,
+.col-4   { background: rgb(240, 174, 97);}
+.col-6   { background: rgb(47, 206, 215); }
+.col-6-B { background: rgb(80, 80, 90);  }
 
 /*-- ALL THINGS GRID --*/
 
@@ -39,16 +53,18 @@ img {
 .row:before, 
 .row:after {
     content:"";
-    display: table ;
+    display: table;
     clear:both;
 }
 
-.col-1{ width: 16.66%; }
-.col-2{ width: 33.33%; }
-.col-3{ width: 50%;    }
-.col-4{ width: 66.66%; }
-.col-5{ width: 83.33%; }
-.col-6{ width: 100%;   }
+.col-1   { width: 16.66%; }
+.col-2   { width: 33.33%; }
+.col-3   { width: 50%;    }
+.col-4   { width: 66.66%; }
+.col-4-W { width: 66.66%; }
+.col-5   { width: 83.33%; }
+.col-6   { width: 100%;   }
+.col-6-B { width: 100%;   }
 
 
 /*-- content styling --*/
@@ -63,13 +79,16 @@ img {
 
 
 /*-- All about that responsiveness --*/
-@media all and (max-width:800px){
-    .col-1{ width: 33.33%;  }
-    .col-2{ width: 50%;     }
-    .col-3{ width: 83.33%;  } 
-    .col-4{ width: 100%;    }
-    .col-5{ width: 100%;    }
-    .col-6{ width: 100%;    }
+@media all and (max-width:800px),
+@media all and (max-width:650px){
+    .col-1    { width: 33.33%;  }
+    .col-2    { width: 50%;     }
+    .col-3    { width: 83.33%;  } 
+    .col-4    { width: 50%;     }
+    .col-4-W  { width: 33.33%;    }
+    .col-5    { width: 100%;    }
+    .col-6    { width: 100%;    }
+    .col-6-B  { width: 100%;    }
 
     .row .col-2:last-of-type{
         width: 100%; 
@@ -79,12 +98,3 @@ img {
         width: 100%; 
     }
 }
-
-@media all and (max-width:650px){
-    .col-1{ width: 50%;     }
-    .col-2{ width: 100%;    }
-    .col-3{ width: 100%;    }
-    .col-4{ width: 100%;    }
-    .col-5{ width: 100%;    }
-    .col-6{ width: 100%;    }
-} 
