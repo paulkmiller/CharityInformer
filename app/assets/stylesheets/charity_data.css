@@ -11,6 +11,12 @@ img {
 	width: 150px;
 }
 
+
+
+
+
+/*-- ALL THINGS GRID --*/
+
 /*-- setting border box on all elements inside the grid --*/
 .grid-container *{
     box-sizing: border-box; 
