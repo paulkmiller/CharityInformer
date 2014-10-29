@@ -6,41 +6,37 @@
           <div class="col-1"><p>Dunno</p></div> 
       </div> 
       <div class="row">
-          <div class="col-6-B"><p>Objective Statement</p></div> 
+          <div class="col-6-B">
+            <h2>Objective Statement</h2>
+              <p>Sriracha 90's small batch meh Godard selfies, post-ironic jean shorts. Meh PBR fingerstache 3 wolf moon. Twee vegan farm-to-table viral, Helvetica master cleanse Portland ennui small batch roof party blog post-ironic. Shoreditch Pitchfork 3 wolf moon, raw denim freegan actually American Apparel keffiyeh. Taxidermy plaid Blue Bottle hella single-origin coffee art party. Before they sold out authentic +1, pug umami vinyl slow-carb. Whatever Austin mixtape pop-up lo-fi slow-carb, kogi gentrify mlkshk narwhal Marfa distillery DIY try-hard Bushwick.</p>
+          </div> 
       </div> 
       <div class="row">
-          <div class="col-6"><p>Carosel</p></div> 
+        <div class="col-6"><p>Carosel</p>
+
+<!--           <% @charity_data.each do |charity_data| %>
+            <div class="charity_links">
+              <p><%= link_to charity_data.charity_name, charity_data_path(charity_data) %></p>
+                <div class="charity_images">
+                  <p><img src="<%= charity_data.charity_logo %>"/></p>
+                    <div class="charity_data">
+                      <p><%= charity_data.charity_desc %></p>
+                    </div>
+                </div>
+            </div>
+
+          <% end %> -->
+
+        </div> 
       </div>
       <div class="row">
-          <div class="col-2"><p>Highchart.js</p></div>
-          <div class="col-4"><p>Charity Info</p></div> 
+          <div class="col-3"><p>Highchart.js</p></div>
+          <div class="col-3"><p>Charity Info</p></div> 
       </div>
   </div>
   <div class="push"></div>
 </div>
 
 <div class="footer">
-  <p>Footer N STUFF</p>
+  <p>Footer</p>
 </div>
-<!-- <h1>Charity Data</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Charity Name</th>
-      <th>Charity Logo</th>
-      <th>Charity Description</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @charity_data.each do |charity_data| %>
-      <tr>
-        <td><%= link_to charity_data.charity_name, charity_data_path(charity_data) %></td>
-        <td><img src="<%= charity_data.charity_logo %>"/></td>
-        <td><%= charity_data.charity_desc %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table> -->
