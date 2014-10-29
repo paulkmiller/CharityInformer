@@ -20,15 +20,21 @@ html, body {
 	height: 3em;
 }
 
-.footer p {
+.footer {
+	p {
 	text-align: center;
 	padding-top: 1em;
 	background: rgb(80,80,90);
 	height: 3em;
+	color: rgba(255, 255, 255, .7);
+	}
+	a {
+	text-decoration: none rgb(217, 74, 53);
+	}
 }
 /*-- Sticky Footer End --*/
 
-/*-- Styling :D --*/
+/*-- Main Styling / Site Pallettes :D --*/
 .col-3   { height: 40em }
 .col-6   { background: rgb(47, 206, 215); height: 28.5em }
 .col-6-B { background: rgb(80, 80, 90  ); height: 10em; 
@@ -49,20 +55,24 @@ html, body {
 
 /*-- End Styling --*/
 
-/*-- Experisel --*/
+/*-- Carousel --*/
 #owl-charities {
 	.charity_links{
   		margin: 2em;
-  		text-decoration: none;
   	}
-  	.charity_images{
+  	.charity_images {
   		display: block;
-		max-height:20em;
-		width: auto;
-		height: auto;
-		:nth-child(1){
-			max-width: 100%;
-		}
+			max-height:20em;
+			width: auto;
+			height: auto;
+			:nth-child(1){
+				max-width: 100%;
+				text-decoration: none;
+				color: black;
+			}
+			.charity_data {
+				margin-top: 1em;
+			}
   	}
 }
 
@@ -103,7 +113,7 @@ html, body {
 .col-6-B { width: 100%;   }
 
 
-/*-- Content styling --*/
+/*-- Content allignment --*/
 [class*='col-'] p {
  padding: 0;
  margin: 0;
@@ -160,7 +170,7 @@ html, body {
 /* Styles */
 }
 
-@media all and (max-width:800px){
+@media all and (max-width:1100px){
     .col-1    { width: 33.33%;  }
     .col-2    { width: 50%;     }
     .col-3    { width: 100%;    } 
@@ -168,7 +178,7 @@ html, body {
     .col-4-W  { width: 33.33%;  }
     .col-5    { width: 100%;    }
     .col-6    { width: 100%;    }
-    .col-6-B  { width: 100%;    }
+    .col-6-B  { width: 100%; height: 110%; }
     .row .col-2:last-of-type{
         width: 100%; 
     }

@@ -3,41 +3,46 @@
       <div class="row">
           <div class="col-1"><p>Logo </p></div> 
           <div class="col-4-W"><p>Search Your Favorite Charity</p></div> 
-          <div class="col-1"><p>Dunno</p></div> 
+          <div class="col-1"><p>Sign In</p></div> 
       </div> 
       <div class="row">
           <div class="col-6-B">
-            <h2>CharityInformer</h2>
+            <h2>Charity Informer</h2>
               <p>Donating to charities has been a long-standing tradition of awesome people everywhere, typically because an indvidual comes to the realization that there are others in greater need outside of their immediate circle, and as such decides to spend their money not on gadgets, but on the betterment of humanity both domestic and abroad. This is well and good, until a business-savvy man (or woman) decides to capitolize on this notion, setting up "charities" that act as mirrors to wonderful organizations, which do not live up to their promise by design. Amazing services, like <a href="http://www.charitynavigator.org/">Charity Navigator</a> will pour over the tax records of all organizations that identify themselves at philanthropic in nature, and publish what they find with a fine-tooth comb, with the intention of exposing such fraudulent groups. However, it's quite difficult to come to an informed decision on the fly if you're being asked to donate by street organizers, even with Charity Navigator's wonderful resources.</p>
               <p> I'm here to fix that.</p>
           </div> 
       </div> 
       <div class="row">
         <div class="col-6">
-            <div id="owl-charities" class="owl-carousel">     
-              <% @charity_data.each do |charity_data| %>
-                <div class="charity_links">
-                  <%= link_to charity_data.charity_name, charity_data_path(charity_data) %>
-                    <div class="charity_images">
-                      <img src="<%= charity_data.charity_logo %>"/>
-                        <div class="charity_data">
-                          <%= charity_data.charity_desc %>
-                        </div>
-                    </div>
+          <div id="owl-charities" class="owl-carousel">    
+            <% @charity_data.each do |charity_data| %>
+              <div class="charity_links">
+
+
+                <div class="charity_images">
+                  <a href="charity_datas/<%=charity_data.id%>">
+                    <img src="<%= charity_data.charity_logo %>"/>
+<!-- 
+                      <div class="charity_data">
+                        <%= charity_data.charity_desc %>
+
+                      </div> -->
+                    </a>
+                  </div>
                 </div>
               <% end %>
             </div>
         </div> 
       </div>
-      <div class="row">
+<!--       <div class="row">
           <div class="col-3"><p>Highchart.js</p></div>
           <div class="col-3"><p>Charity Info</p></div> 
-      </div>
+      </div> -->
   </div>
   <div class="push"></div>
 </div>
 
 <div class="footer">
-  <p>Footer</p>
+  <p>Mad Props to <a href="http://www.charitynavigator.org/">Charity Navigator</a> for being amazing people. Site deisnged by Paul Miller.</p>
 </div>
 
