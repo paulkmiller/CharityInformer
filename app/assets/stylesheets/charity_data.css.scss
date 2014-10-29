@@ -28,15 +28,15 @@ html, body {
 }
 /*-- Sticky Footer End --*/
 
-/*-- Coloring within the lines :D --*/
-
-.col-6   { background: rgb(47, 206, 215); height: 10em }
-.col-6-B { background: rgb(80, 80, 90  ); height: 8em;  
+/*-- Styling :D --*/
+.col-3   { height: 40em }
+.col-6   { background: rgb(47, 206, 215); height: 28.5em }
+.col-6-B { background: rgb(80, 80, 90  ); height: 10em;  
 	:nth-child(1) { 
 					color: rgb(217, 74, 53); 
 					text-align: center; 
 					letter-spacing: .2em;
-					margin-bottom: .5em; 
+					margin-top: .5em;
 				  }
 	:nth-child(2) { color: rgba(255, 255, 255, .8); 
 					font-size: .8em;
@@ -60,7 +60,7 @@ html, body {
 
 [class*='col-'] {
     float: left; 
-    min-height: 4em; 
+    min-height: 6em; 
     width: 16.66%; 
     padding: 12px; 
 }
@@ -143,9 +143,9 @@ html, body {
 @media all and (max-width:800px){
     .col-1    { width: 33.33%;  }
     .col-2    { width: 50%;     }
-    .col-3    { width: 83.33%;  } 
+    .col-3    { width: 100%;    } 
     .col-4    { width: 50%;     }
-    .col-4-W  { width: 33.33%;    }
+    .col-4-W  { width: 33.33%;  }
     .col-5    { width: 100%;    }
     .col-6    { width: 100%;    }
     .col-6-B  { width: 100%;    }
