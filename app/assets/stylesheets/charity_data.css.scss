@@ -31,7 +31,9 @@ html, body {
 /*-- Styling :D --*/
 .col-3   { height: 40em }
 .col-6   { background: rgb(47, 206, 215); height: 28.5em }
-.col-6-B { background: rgb(80, 80, 90  ); height: 10em;  
+.col-6-B { background: rgb(80, 80, 90  ); height: 10em; 
+		   box-shadow: inset 0em .2em .1em #333;
+
 	:nth-child(1) { 
 					color: rgb(217, 74, 53); 
 					text-align: center; 
