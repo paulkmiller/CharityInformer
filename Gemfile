@@ -1,6 +1,10 @@
 source 'https://rubygems.org'
 
 
+
+# touch-enable and beautiful carousel for rails
+gem 'owlcarousel-rails'
+# user sign in and authorization
 gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.6'

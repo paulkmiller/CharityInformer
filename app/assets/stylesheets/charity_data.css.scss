@@ -38,15 +38,33 @@ html, body {
 					color: rgb(217, 74, 53); 
 					text-align: center; 
 					letter-spacing: .2em;
-					margin-top: .5em;
+					margin-top: -.2em;
 				  }
-	:nth-child(2) { color: rgba(255, 255, 255, .8); 
+	:nth-child(2),
+	:nth-child(3) { color: rgba(255, 255, 255, .8); 
 					font-size: .8em;
 					margin-top: 1em; }
 		 }
 
 
-/*-- End Pallates --*/
+/*-- End Styling --*/
+
+/*-- Experisel --*/
+#owl-charities {
+	.charity_links{
+  		margin: 2em;
+  		text-decoration: none;
+  	}
+  	.charity_images{
+  		display: block;
+		max-height:20em;
+		width: auto;
+		height: auto;
+		:nth-child(1){
+			max-width: 100%;
+		}
+  	}
+}
 
 /*-- ALL THINGS GRID --*/
 
