@@ -40,3 +40,41 @@ charity_data = CharityData.create([
 		charity_desc: "Works to safeguard the earth — its people, its plants and animals, and the natural systems on which all life depends. ",
 	},
 	])
+
+charity_expenses = CharityExpense.create([
+	{
+		program: 179835191,
+		admin: 2733144,
+		fundraising: 24435335
+	},
+	{
+		program: 2,
+		admin: 2733144,
+		fundraising: 24435335
+	},
+	{
+		program: 3,
+		admin: 2733144,
+		fundraising: 24435335
+	},
+	{
+		program: 4,
+		admin: 2733144,
+		fundraising: 24435335
+	},
+	{
+		program: 5,
+		admin: 2733144,
+		fundraising: 24435335
+	},
+	{
+		program: 6,
+		admin: 2733144,
+		fundraising: 24435335
+	},
+	{
+		program: 7,
+		admin: 2733144,
+		fundraising: 24435335
+	}
+	])

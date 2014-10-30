@@ -1,8 +1,16 @@
 <div class="grid-container">
 	<div class="row">
-	  <div class="col-3"><p>Highchart.js</p></div>
-	  <div class="col-3"><p>Charity Info</p></div> 
+	  <div class="col-3">
+	  	<div id="container" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+	  </div>
+	  <div class="col-3" id="description">
+		  <p>
+		  	<%= @charity_data.charity_desc %>
+	  	</p>
+		  <p>
+	  		Tonx wolf bitters art party. Meh slow-carb Blue Bottle try-hard distillery, flexitarian Thundercats umami letterpress Portland craft beer Austin you probably haven't heard of them. Locavore slow-carb DIY you probably haven't heard of them mumblecore cred. Meditation distillery food truck, shabby chic deep v master cleanse Marfa biodiesel synth gluten-free semiotics fap flexitarian next level sartorial. Cred 3 wolf moon seitan tote bag. Bushwick aesthetic shabby chic slow-carb pop-up locavore, heirloom crucifix kogi deep v wolf bespoke craft beer Austin chillwave. Raw denim messenger bag street art bespoke Truffaut.
+	  	</p>
+	  </div> 
 	</div>
-</div>
 
 <%= link_to 'Back', root_path %>

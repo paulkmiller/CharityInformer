@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20141027134240) do
     t.integer "cgg"
     t.integer "fc"
     t.integer "o"
+    t.integer "charity_data_id"
   end
 
   create_table "charity_data", force: true do |t|
@@ -32,6 +33,7 @@ ActiveRecord::Schema.define(version: 20141027134240) do
     t.integer "program"
     t.integer "admin"
     t.integer "fundraising"
+    t.integer "charity_data_id"
   end
 
   create_table "users", force: true do |t|

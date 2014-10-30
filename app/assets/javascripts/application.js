@@ -14,4 +14,6 @@
 //= require jquery_ujs
 //= require_tree .
 //= require owl.carousel.min
+//= require highcharts.js
+//= require modules/exporting.js
 

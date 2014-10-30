@@ -4,6 +4,7 @@ class CreateCharityContributions < ActiveRecord::Migration
       t.integer :cgg
       t.integer :fc
       t.integer :o
+      t.references :charity_data
     end
   end
 end

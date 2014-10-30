@@ -13,3 +13,8 @@
 		charity_logo: "http://s30.postimg.org/gvpthv56p/worldvision.png",
 		charity_desc: "Sponsor a child and help fight world hunger through your donations that support World Vision's aid, child nutrition and agricultural solutions around the world.",
 	},
+
+
+		<p><%= charity_expenses.program %></p>
+	  	<p><%= charity_expenses.admin %> </p>
+	  	<p><%= charity_expenses.fundraising %> </p>

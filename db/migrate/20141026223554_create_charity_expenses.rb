@@ -4,6 +4,7 @@ class CreateCharityExpenses < ActiveRecord::Migration
       t.integer :program
       t.integer :admin
       t.integer :fundraising
+      t.references :charity_data
     end
   end
 end
