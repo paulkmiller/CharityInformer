@@ -2,15 +2,13 @@
   <div class="grid-container">
       <div class="row">
           <div class="col-1"><p>Charity Informer</p></div> 
-          <div class="col-4-W">
-
+          <div class="col-4-B">
             <p>Search Your Favorite Charity</p>
               <%= form_tag charity_datas_path, method: 'get' do %>
                 <p>
                   <%= text_field_tag :search, params[:search] %>
                 <% end %>
                 </p>
-
           </div> 
           <div class="col-1"><p>Sign In</p></div> 
       </div> 
@@ -24,7 +22,7 @@
       <div class="row">
         <div class="col-6">
           <div id="owl-charities" class="owl-carousel">    
-            <% @charity_data.each do |charity_data| %>
+            <% @charity_data.shuffle.each do |charity_data| %>
               <div class="charity_links">
                 <div class="charity_images">
                   <a href="charity_datas/<%=charity_data.id%>">
