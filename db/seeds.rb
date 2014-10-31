@@ -1,18 +1,10 @@
+CharityData.delete_all
+
 charity_data = CharityData.create([
 	{
 		charity_name: "Doctors Without Borders",
 		charity_logo: "http://s8.postimg.org/819r1wzgl/DWB.png",
 		charity_desc: "Amazing people who do amazing things."
-	},
-	{
-		charity_name: "The Nature Conservancy",
-		charity_logo: "http://s30.postimg.org/v3ag9ebk1/TNC.png",
-		charity_desc: 'An American charitable environmental organization, headquartered in Arlington, Virginia. Its mission is to "conserve the lands and waters on which all life depends."',
-	},
-	{
-		charity_name: "United States Fund for UNICEF",
-		charity_logo: "http://s30.postimg.org/vsyaivif5/UNICEF.png",
-		charity_desc: "Does whatever it takes to save and protect the world's most vulnerable children.",
 	},
 	{
 		charity_name: "World Vision",
