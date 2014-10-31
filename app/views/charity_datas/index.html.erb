@@ -1,12 +1,12 @@
 <div class="wrapper">
   <div class="grid-container">
       <div class="row">
-          <div class="col-1"><p>Charity Informer</p></div> 
+          <div class="col-1-B"><p>Charity Informer<p></div> 
           <div class="col-4-B">
             <p>Search Your Favorite Charity</p>
               <%= form_tag charity_datas_path, method: 'get' do %>
                 <p>
-                  <%= text_field_tag :search, params[:search] %>
+                  <%= text_field_tag :search, params[:search], :class => "search" %>
                 <% end %>
                 </p>
           </div> 
@@ -15,7 +15,25 @@
       <div class="row">
           <div class="col-6-B">
             <h2>What Is Charity Informer?</h2>
-              <p>Donating to charities has been a long-standing tradition of awesome people everywhere, typically because an indvidual comes to the realization that there are others in greater need outside of their immediate circle, and as such decides to spend their money not on gadgets, but on the betterment of humanity both domestic and abroad. But there are business-savvy individuals who decide to capitalize on this notion, setting up faux-charities, which by design never live up to their promises. Amazing services like <a href="http://www.charitynavigator.org/">Charity Navigator</a> will pour over the tax records of all organizations that identify themselves as philanthropic in nature and publish their findings, with the intention of exposing such fraudulent groups. However, it's still quite difficult to come to an informed decision on the fly.</p>
+              <p class="expando">Donating to charities 
+                <expando>
+                  <initial><a>is awesome.</a></initial>
+                  <expanded>
+                    has been a long-standing tradition of awesome people everywhere, whom decide to spend their hard earned money not on gadgets, but on the betterment of humanity both domestic and abroad.
+                  </expanded>
+                </expando>
+                    But there are
+                <expando>
+                  <initial><a> bad, greedy people in this world.</a></initial>
+                  <expanded>business-savvy individuals who decide to capitalize on this notion, setting up faux-charities, which by design never live up to their promises. 
+                  </expanded>
+                </expando>
+                    Fortunately, things aren't
+                <expando>
+                  <initial><a>hopeless.</a></initial>
+                  <expanded>hopeless, with services like <a href="http://www.charitynavigator.org/" class="charitynav">Charity Navigator</a> will pour over the tax records of all organizations that identify themselves as philanthropic in nature and publish their findings, with the intention of exposing such fraudulent practices. 
+                  </expanded>
+                  However, even with today's technology, it's still quite difficult to come to an informed decision on the fly.</p>
               <p> I'm here to fix that.</p>
           </div> 
       </div> 

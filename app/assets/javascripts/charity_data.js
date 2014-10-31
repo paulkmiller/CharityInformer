@@ -17,9 +17,19 @@ $(document).ready(function() {
     itemsDesktopSmall : [980,3],
     itemsTablet: [768,2],
     itemsMobile : [479,1],
- 
-
 	});
+
+    // Expando Code - https://github.com/cantino/expando
+	  $(function() {
+	    $(".expando").expando();
+    });
+
+
+	  // var url = document.location.pathname
+	  // var data = $.ajax(url)
+	  // 	.done(function(data){
+	  // 		console.log(data);
+
     $('#container').highcharts({
     chart: {
 	    plotBackgroundColor: null,
@@ -50,13 +60,13 @@ $(document).ready(function() {
     series: [{
       type: 'pie',
       name: 'Charity Expenses',
-      data: [
+      data: 
+      [
           ['Charity Objective',  	  	179,835,191],
           ['Admin & Overhead',     		  2,733,144],
           ['Marketing & Fundraising',	 24,435,335],
       ]
-
     }]
+    });
   });
-});
 

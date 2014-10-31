@@ -7,5 +7,10 @@ class CharityDatasController < ApplicationController
 	def show
 	  @charity_data = CharityData.find(params[:id])
 	  @charity_expenses = @charity_data.charity_expenses
+
+		respond_to do |format|
+		format.html
+	  format.json { render :json => @charity_expenses }
+  end
 	end
 end
