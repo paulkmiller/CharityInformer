@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 
-
+gem 'rails_12factor'
 # touch-enable and beautiful carousel for rails
 gem 'owlcarousel-rails'
 # user sign in and authorization
