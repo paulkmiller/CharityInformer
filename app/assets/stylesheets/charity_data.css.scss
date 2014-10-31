@@ -38,8 +38,8 @@ html, body {
 .col-1,
 .col-1-B,  
 .col-4-B  { background: rgb(35, 172, 196); }
-.col-1-B p{ color: white; font-size: 1.2em; letter-spacing: .1em; padding: 1em 0 0 .6em; text-shadow: 1px 1px #000;}
-.col-4-B p{ font-size: 1.2em; }
+.col-1-B p{ color: white;  letter-spacing: .1em; padding: 1em 0 0 .6em; text-shadow: 1px 1px #000;}
+/*.col-4-B p{ font-size: 1.2em; }*/
 				 	
 				 
 .col-3   { height: 40em; background: rgb(255, 255, 255); }
@@ -70,9 +70,8 @@ html, body {
  }
 
  .search {
- 	padding: .4em;
  	margin-top: 1em;
- 	width: 15em;
+ 	padding-top: 1em;
  	border-radius: 1em;
  	border: none;
  	box-shadow: inset .2em .2em .4em #333;
