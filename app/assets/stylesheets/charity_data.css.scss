@@ -38,7 +38,7 @@ html, body {
 .col-1,
 .col-1-B,  
 .col-4-B  { background: rgb(35, 172, 196); }
-.col-1-B p { color: white; font-size: 1.3em; letter-spacing: .2em; padding-top: .5em;}
+.col-1-B p{ color: white; font-size: 1.3em; letter-spacing: .1em; padding: 1em 0 0 .6em; text-shadow: 1px 1px #000;}
 .col-4-B p{ font-size: 1.2em; }
 				 	
 				 
@@ -79,6 +79,87 @@ html, body {
 
  }
 /*-- End Styling --*/
+
+/*-- Hamburger --*/
+
+
+.menu_opener {
+  display: none;
+}
+
+ /** These are the animations for everything**/
+.menu_opener:checked ~ {
+  .side-menu {
+    transform: translateX(-100%);
+  }
+  .menu_opener_label {
+    &:after {
+     transform:rotate(45deg); 
+     margin-top: 1.35em;
+    }
+    &:before {
+     transform:rotate(-45deg);
+     margin-top: 1.35em;
+    }
+    .barre_hamburger {
+   opacity: 0;
+  }
+  }
+}
+
+/** Circle + Top + Bottom Bars **/
+.menu_opener_label {
+  width: 3em;
+  height: 3em;
+  margin: .8em 1em 0 0;
+  display: block;
+  cursor: pointer;
+  border-radius:50%;
+  float: right;
+  &:after {
+  position: absolute;
+  display: block;
+    margin-top: .85em;
+    margin-left: .8em;
+    background: #000;
+    content: "";
+    width: 1.4em;
+    height: .25em; 
+    border-radius: 1em;
+    -webkit-transition: all .4s ease ;
+    transition: all .4s ease ;
+  }
+  &:before {
+    position: absolute;
+    display: block;
+    margin-top: 1.85em;
+    margin-left: .8em;
+    background: #000;
+    content: "";
+    width: 1.4em;
+    height: .25em;
+    border-radius: 1em;
+    -webkit-transition: all .4s ease ;
+    transition: all .4s ease ;
+  }
+}
+
+/** Middle Bar **/
+.barre_hamburger {
+   position: relative;
+   display: block;
+   margin-top: 1.35em;
+   margin-right: .8em;
+   width: 1.4em;
+   height: .25em; 
+   background: #000;
+   border-radius: 1em;
+   float: right;
+   cursor: pointer;
+   z-index: 20;
+   -webkit-transition: all .4s ease;
+   transition: all .4s ease;
+}
 
 /*-- Carousel --*/
 #owl-charities {
