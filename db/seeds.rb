@@ -38,7 +38,7 @@ charity_data = CharityData.create([
 	},
 	{
 		charity_name: "Natural Resources Defense Council",
-		charity_logo: "http://s27.postimg.org/ibf8i8069/NRDC.png",
+		charity_logo: "http://northcarolinaenvironmentalpartnership.org/wp-content/uploads/NRDC_Logo_BlueGreen_Video_Titlecard.png",
 		charity_desc: "Works to safeguard the earth — its people, its plants and animals, and the natural systems on which all life depends. ",
 	},
 	{
@@ -78,7 +78,7 @@ charity_data = CharityData.create([
 	},
 	{
 		charity_name: "Natural Resources Defense Council",
-		charity_logo: "http://s27.postimg.org/ibf8i8069/NRDC.png",
+		charity_logo: "http://northcarolinaenvironmentalpartnership.org/wp-content/uploads/NRDC_Logo_BlueGreen_Video_Titlecard.png",
 		charity_desc: "Works to safeguard the earth — its people, its plants and animals, and the natural systems on which all life depends. ",
 	},
 	{
@@ -118,7 +118,7 @@ charity_data = CharityData.create([
 	},
 	{
 		charity_name: "Natural Resources Defense Council",
-		charity_logo: "http://s27.postimg.org/ibf8i8069/NRDC.png",
+		charity_logo: "http://northcarolinaenvironmentalpartnership.org/wp-content/uploads/NRDC_Logo_BlueGreen_Video_Titlecard.png",
 		charity_desc: "Works to safeguard the earth — its people, its plants and animals, and the natural systems on which all life depends. ",
 	},
 	{
@@ -158,7 +158,7 @@ charity_data = CharityData.create([
 	},
 	{
 		charity_name: "Natural Resources Defense Council",
-		charity_logo: "http://s27.postimg.org/ibf8i8069/NRDC.png",
+		charity_logo: "http://northcarolinaenvironmentalpartnership.org/wp-content/uploads/NRDC_Logo_BlueGreen_Video_Titlecard.png",
 		charity_desc: "Works to safeguard the earth — its people, its plants and animals, and the natural systems on which all life depends. ",
 	},
 	{
@@ -198,7 +198,7 @@ charity_data = CharityData.create([
 	},
 	{
 		charity_name: "Natural Resources Defense Council",
-		charity_logo: "http://s27.postimg.org/ibf8i8069/NRDC.png",
+		charity_logo: "http://northcarolinaenvironmentalpartnership.org/wp-content/uploads/NRDC_Logo_BlueGreen_Video_Titlecard.png",
 		charity_desc: "Works to safeguard the earth — its people, its plants and animals, and the natural systems on which all life depends. ",
 	},
 	{
@@ -238,7 +238,7 @@ charity_data = CharityData.create([
 	},
 	{
 		charity_name: "Natural Resources Defense Council",
-		charity_logo: "http://s27.postimg.org/ibf8i8069/NRDC.png",
+		charity_logo: "http://northcarolinaenvironmentalpartnership.org/wp-content/uploads/NRDC_Logo_BlueGreen_Video_Titlecard.png",
 		charity_desc: "Works to safeguard the earth — its people, its plants and animals, and the natural systems on which all life depends. ",
 	}
 	])

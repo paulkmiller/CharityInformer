@@ -1,17 +1,17 @@
 <div class="wrapper">
   <div class="grid-container">
       <div class="row">
-          <div class="col-1-B"><h2>Charity Informer<h2></div> 
+          <div class="col-1"><h2><h2></div> 
           <div class="col-4-B">
             <p>Search Your Favorite Charity</p>
               <%= form_tag charity_datas_path, method: 'get' do %>
                 <p>
-                  <%= text_field_tag :search, params[:search], :class => "search", name: nil %>
+                  <%= text_field_tag :search, params[:search], :class => "search"%>
                 <% end %>
                 </p>
           </div> 
           <div class="col-1">
-            <div class="nav-icon">
+            <!-- <div class="nav-icon">
 
               <label for="menu-toggle">   
 
@@ -24,7 +24,7 @@
                   </label>
 
                 </input> 
-              </label> 
+              </label>  -->
             </div>  
           </div> 
       </div> 

@@ -10,7 +10,8 @@ class CharityDatasController < ApplicationController
 
 		respond_to do |format|
 		format.html
-	  format.json { render :json => @charity_expenses }
+	  	format.json { render :json => @charity_expenses }
+	  
   end
 	end
 end

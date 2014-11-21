@@ -36,16 +36,20 @@ html, body {
 
 /*-- Main Styling / Site Pallettes :D --*/
 .col-1,
-.col-1-B,  
-.col-4-B  { background: rgb(35, 172, 196); }
-.col-1-B h2{ color: white;  letter-spacing: .2em; text-shadow: 2px 1px 4px #000; font-size: 1em; margin: 1em auto;}
-.col-4-B p{ font-size: 1em; }
+.col-4-B    { background: rgb(35, 172, 196); 
+              padding-top: 12px;}
+.col-1 h2   { color: white;  letter-spacing: .2em; 
+							text-shadow: 1px 1px 4px #000; 
+							font-size: 1em; margin: 1em auto;
+						}
+.col-4-B p  { font-size: 1em; }
 				 	
 				 
 .col-3   { height: 40em; background: rgb(255, 255, 255); }
 .col-6   { height: 28.5em }
 .col-6-B { background: rgb(80, 80, 90); height: 10em; 
 		   		 box-shadow: inset 0em .3em .1em #333;
+           padding-top: 12px;
 			h2 { 
 					 color: rgb(217, 74, 53); 
 					 text-align: center; 
@@ -89,6 +93,7 @@ html, body {
  /** These are the animations for everything**/
 .menu_opener:checked ~ {
   .side-menu {
+/*    @include transform(translateX(-100%));*/
     transform: translateX(-100%);
   }
   .menu_opener_label {
@@ -106,7 +111,7 @@ html, body {
   }
 }
 
-/** Circle + Top + Bottom Bars **/
+/*-- Circle + Top + Bottom Bars --*/
 .menu_opener_label {
   width: 3em;
   height: 3em;
@@ -143,7 +148,7 @@ html, body {
   }
 }
 
-/** Middle Bar **/
+/*-- Middle Bar --*/
 .barre_hamburger {
    position: relative;
    display: block;
@@ -189,7 +194,6 @@ html, body {
     float: left; 
     min-height: 6em; 
     width: 16.66%; 
-    padding: 12px; 
 }
 
 /*-- Clearfix hack -- */ 
